@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Conding 2026 — BuiltEnv Code</title>
+  <meta name="description" content="Conding 2026 / builtenv-code — building-aware coding experiments, datasets, and visual prototypes." />
+  <style>
+    :root{
+      --bg:#04121a;--panel:#071623;--muted:#9ec9d7;--accent:#72e3ff;--glass:rgba(255,255,255,0.04);
+      --radius:16px;--max:1100px
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#04121a 0%, #071827 100%);color:#eaf9ff;min-height:100vh}
+    .wrap{max-width:var(--max);margin:32px auto;padding:28px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:34px;border-radius:22px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 30px 80px rgba(2,8,18,0.6)}
+    .brand{display:flex;align-items:center;gap:14px}
+    .mark{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#5a8cff);box-shadow:0 12px 30px rgba(114,227,255,0.12)}
+    h1{font-size:clamp(28px,4.6vw,48px);margin:10px 0 12px}
+    p.lead{color:var(--muted);margin:0;line-height:1.6}
+    .cta{display:flex;gap:12px;margin-top:22px}
+    .btn{padding:12px 16px;border-radius:12px;font-weight:700;cursor:pointer;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),#5a8cff);color:#04121a;border:none;box-shadow:0 18px 36px rgba(114,227,255,0.14)}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+    .visual{border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.03);background:#071427;height:320px;display:flex;align-items:center;justify-content:center}
+    .links{display:flex;gap:10px;margin-top:12px}
+    section{margin-top:28px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);border:1px solid rgba(255,255,255,0.03)}
+    .feature h3{margin:6px 0 8px}
+    .meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:18px;color:var(--muted)}
+    footer{margin-top:40px;color:var(--muted);font-size:0.95rem;text-align:center}
+    @media (max-width:980px){.hero{grid-template-columns:1fr;}.visual{height:220px}.features{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div>
+        <div class="brand">
+          <div class="mark" aria-hidden="true"></div>
+          <div>
+            <div style="font-weight:800">Conding 2026</div>
+            <div style="color:var(--muted);font-size:0.9rem">builtenv-code — built-environment experiments</div>
+          </div>
+        </div>
+
+        <h1>Build the future of building-aware code</h1>
+        <p class="lead">builtenv-code is a compact open-source toolkit for working with building data, prototype visualizations, and reproducible pipelines — focused on clarity, experimentation, and collaboration.</p>
+
+        <div class="cta">
+          <a class="btn primary" href="/prototype.html">Open Prototype</a>
+          <a class="btn" href="/download.html">Download Assets</a>
+          <a class="btn" href="/README.md">Read the README</a>
+        </div>
+
+        <div class="meta">
+          <div class="card" style="padding:10px 12px">📦 MIT License</div>
+          <div class="card" style="padding:10px 12px">🧩 Python samples</div>
+          <div class="card" style="padding:10px 12px">🎛️ Prototype & PNG export</div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <div class="visual">
+          <img src="/assets/backdrop.svg" alt="backdrop" style="width:100%;height:100%;object-fit:cover" />
+        </div>
+        <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center">
+          <div style="font-weight:700">Preview</div>
+          <div style="color:var(--muted);font-size:0.9rem">Skyline • SVG</div>
+        </div>
+        <div class="links">
+          <a class="btn" href="/prototype.html">Open prototype</a>
+          <a class="btn" href="/download.html">Download</a>
+        </div>
+      </aside>
+    </header>
+
+    <section>
+      <h2 style="margin:0 0 12px">Why builtenv-code?</h2>
+      <div class="features">
+        <div class="feature">
+          <div style="font-size:22px">🏙️</div>
+          <h3>Building-first workflows</h3>
+          <p style="margin:0;color:var(--muted)">Tools and examples designed around building geometry, metadata, and lightweight spatial analysis.</p>
+        </div>
+        <div class="feature">
+          <div style="font-size:22px">⚙️</div>
+          <h3>Reproducible pipelines</h3>
+          <p style="margin:0;color:var(--muted)">Small, documented pipelines for ingesting, normalizing, and extracting features from building datasets.</p>
+        </div>
+        <div class="feature">
+          <div style="font-size:22px">🎨</div>
+          <h3>Prototype visuals</h3>
+          <p style="margin:0;color:var(--muted)">Interactive mockups, exportable PNGs, and simple visual previews to communicate results.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 style="margin:18px 0 12px">Quick start</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="card">
+          <h3 style="margin:6px 0">Run locally</h3>
+          <pre style="margin:0;color:var(--muted);background:transparent;border:none;padding:0">
+git clone https://github.com/stel79/builtenv-code.git
+cd builtenv-code
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python src/sample_building_logic.py --name "Example Tower" --floors 12 --area 5400 --year 2026 --json
+          </pre>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:6px 0">Open prototype</h3>
+          <p style="margin:0;color:var(--muted)">Open <a href="/prototype.html">prototype.html</a> in your browser and use the Download buttons to export a PNG or save the interactive page.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 style="margin:18px 0 12px">Contribute</h2>
+      <p style="color:var(--muted);margin:0 0 12px">Contributions welcome — open issues for ideas, add small focused PRs, and keep changes documented.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+        <a class="btn" href="/CONTRIBUTING.md">Contributing</a>
+        <a class="btn" href="/LICENSE">License</a>
+        <a class="btn" href="/issues">Issues</a>
+      </div>
+    </section>
+
+    <footer>
+      <div>© 2026 Conding 2026 — builtenv-code • MIT License</div>
+      <div style="margin-top:6px;color:var(--muted)">Repository: <a href="https://github.com/stel79/builtenv-code">stel79/builtenv-code</a></div>
+    </footer>
+  </div>
+</body>
+</html>
